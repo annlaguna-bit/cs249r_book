@@ -385,18 +385,12 @@ The vast computational demands of modern machine learning often require the scal
   },
  Line/.style={line width=1.0pt,black!50,text=black,-{Triangle[width=0.8*6pt,length=0.98*6pt]}},
 }
-\node[Box, fill=GreenL,](B1){Challenges};
+\node[Box, fill=GreenL,](B1){Characteristics};
 \node[Box2,right=2 of B1,fill=BlueL](B2){Benefits};
-\node[Box3,right=2 of B2,fill=OrangeL](B3){Examples};
-\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){Characteristics};
+\node[Box3,right=2 of B2,fill=OrangeL](B3){Challenges};
+\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){UseCases};
 \node[Box,draw=OliveLine,fill=OliveL!30, minimum height=11.5mm,
 above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Cloud ML};
-%
-\node[Box,below=0.7 of B1](B11){Virtual Assistants};
-\node[Box,below=of B11](B12){Security and Anomaly Detection};
-\node[Box,below=of B12](B13){Recommendation Systems};
-\node[Box,below=of B13](B14){Fraud Detection};
-\node[Box,below=of B14](B15){Personalized User Experience};
 %
 \node[Box2,below=0.7 of B2](B21){Vendor Lock-In};
 \node[Box2,below=of B21](B22){Latency Issues};
@@ -404,18 +398,26 @@ above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Cloud ML};
 \node[Box2,below=of B23](B24){Dependency on Internet};
 \node[Box2,below=of B24](B25){Cost Considerations};
 %
-\node[Box3,below=0.7 of B3](B31){Scalable Data Processing and Model Training};
-\node[Box3,below=of B31](B32){Collaboration and Resource Sharing};
-\node[Box3,below=of B32](B33){Flexible Deployment and Accessibility};
-\node[Box3,below=of B33](B34){Centralized Infrastructure};
-\node[Box3,below=of B34](B35){Cost-Effectiveness and Scalability};
-%
 \node[Box4,below=0.7 of B4](B41){Cost-Effectiveness};
 \node[Box4,below=of B41](B42){Immense Computational Power};
 \node[Box4,below=of B42](B43){Collaborative Environment};
 \node[Box4,below=of B43](B44){Access to Advanced Tools};
 \node[Box4,below=of B44](B45){Dynamic Scalability};
 %
+\node[Box,below=0.7 of B1](B11){Virtual Assistants};
+\node[Box,below=of B11](B12){Security and Anomaly Detection};
+\node[Box,below=of B12](B13){Recommendation Systems};
+\node[Box,below=of B13](B14){Fraud Detection};
+\node[Box,below=of B14](B15){Personalized User Experience};
+%
+%
+\node[Box3,below=0.7 of B3](B31){Scalable Data Processing and Model Training};
+\node[Box3,below=of B31](B32){Collaboration and Resource Sharing};
+\node[Box3,below=of B32](B33){Flexible Deployment and Accessibility};
+\node[Box3,below=of B33](B34){Centralized Infrastructure};
+\node[Box3,below=of B34](B35){Cost-Effectiveness and Scalability};
+%
+
 \foreach \i in{1,2,3,4,5}{
   \foreach \x in{1,2,3,4}{
 \draw[Line](B\x.west)--++(180:0.5)|-(B\x\i);
@@ -549,27 +551,27 @@ As machine learning applications grow, so does the need for faster, localized de
   },
  Line/.style={line width=1.0pt,black!50,text=black,-{Triangle[width=0.8*6pt,length=0.98*6pt]}},
 }
-\node[Box, fill=GreenL,](B1){Challenges};
+\node[Box, fill=GreenL,](B1){Characteristics};
 \node[Box2,right=2 of B1,fill=BlueL](B2){Benefits};
-\node[Box3,right=2 of B2,fill=OrangeL](B3){Examples};
-\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){Characteristics};
+\node[Box3,right=2 of B2,fill=OrangeL](B3){Challenges};
+\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){UseCases};
 \node[Box,draw=OliveLine,fill=OliveL!30, minimum height=11.5mm,
-above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Edge ML};
+above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Cloud ML};
 %
-\node[Box,below=0.7 of B1](B11){Security Concerns at the Edge Nodes};
-\node[Box,below=of B11](B12){Complexity in Managing Edge Nodes};
-\node[Box,below=of B12](B13){Limited Computational Resources};
+\node[Box4,below=0.7 of B4](B41){Decentralized Data Processing};
+\node[Box4,below=of B41](B42){Local Data Storage and Computation};
 %
 \node[Box2,below=0.7 of B2](B21){Reduced Latency};
 \node[Box2,below=of B21](B22){Enhanced Data PrivacyW};
 \node[Box2,below=of B22](B23){Lower Bandwidth Usage};
 %
+\node[Box,below=0.7 of B1](B11){Security Concerns at the Edge Nodes};
+\node[Box,below=of B11](B12){Complexity in Managing Edge Nodes};
+\node[Box,below=of B12](B13){Limited Computational Resources};
+%
 \node[Box3,below=0.7 of B3](B31){Industrial IoT};
 \node[Box3,below=of B31](B32){Smart Homes and};
 \node[Box3,below=of B32](B33){Autonomous Vehicles};
-%
-\node[Box4,below=0.7 of B4](B41){Decentralized Data Processing};
-\node[Box4,below=of B41](B42){Local Data Storage and Computation};
 %
 \foreach \i in{1,2,3}{
   \foreach \x in{1,2,3}{
@@ -673,6 +675,70 @@ Perhaps the most pervasive but least visible application of Mobile ML lies in ho
 
 These applications demonstrate how Mobile ML bridges the gap between cloud-based solutions and edge computing, providing efficient, privacy-conscious, and user-friendly machine learning capabilities on personal mobile devices. The continuous advancement in mobile hardware capabilities and optimization techniques continues to expand the possibilities for Mobile ML applications.
 
+@fig-tiny-ml encapsulates the key aspects of Tiny ML discussed in this section.
+
+::: {#fig-tiny-ml fig-env="figure" fig-pos="htb"}
+```{.tikz}
+\begin{tikzpicture}[font=\small\usefont{T1}{phv}{m}{n}]
+\tikzset{
+  Box/.style={inner xsep=2pt,
+  draw=GreenLine,
+  fill=GreenL!50,
+  node distance=0.4,
+    line width=0.75pt,
+    anchor=west,
+    text width=32mm,align=flush center,
+    minimum width=32mm, minimum height=9.5mm
+  },
+  Box2/.style={Box,draw=BlueLine,fill=BlueL!50, text width=27mm, minimum width=27mm
+  },
+  Box3/.style={Box,draw=OrangeLine,fill=OrangeL!40, text width=28mm, minimum width=28mm
+  },
+Box4/.style={Box,draw=VioletLine,fill=VioletL2!40, text width=39mm, minimum width=39mm
+  },
+ Line/.style={line width=1.0pt,black!50,text=black,-{Triangle[width=0.8*6pt,length=0.98*6pt]}},
+}
+\node[Box, fill=GreenL,](B1){Characteristics};
+\node[Box2,right=2 of B1,fill=BlueL](B2){Benefits};
+\node[Box3,right=2 of B2,fill=OrangeL](B3){Challenges};
+\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){Examples};
+\node[Box,draw=OliveLine,fill=OliveL!30, minimum height=11.5mm,
+above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Tiny ML};
+%
+\node[Box4,below=0.7 of B4](B41){Utilizes SoCs};
+\node[Box4,below=0.7 of B4](B41){Specialized Frameworks};
+%
+\node[Box3,below=0.7 of B3](B31){Real-Time Processing};
+\node[Box3,below=of B32](B33){No Dependency in Cloud Server};
+\node[Box3,below=of B31](B32){User Privacy};
+%
+\node[Box,below=0.7 of B1](B11){Limited RAM, storage and processing power};
+\node[Box,below=of B11](B12){Battery and Thermal Constraints};
+\node[Box,below=of B12](B13){Smaller Model Size};
+%
+\node[Box2,below=0.7 of B2](B21){Filters in Social media Apps};
+\node[Box2,below=of B21](B22){Speech Recognition};
+\node[Box2,below=of B21](B22){Real-Time Language Translation};
+\node[Box2,below=of B22](B23){Mobile Health Monitoring};
+\node[Box3,below=of B32](B33){Personalized Models};
+%
+\foreach \i in{1,2,3}{
+  \foreach \x in{1,3}{
+\draw[Line](B\x.west)--++(180:0.5)|-(B\x\i);
+}
+}
+\foreach \x in{1,2}{
+\draw[Line](B4.west)--++(180:0.5)|-(B4\x);
+}
+ \foreach \x in{1,2,3,4}{
+\draw[Line](B2.west)--++(180:0.5)|-(B2\x);
+}
+\foreach \x in{1,2,3,4}{
+\draw[Line](B0)-|(B\x);
+}
+\end{tikzpicture}
+```
+
 ## Tiny Machine Learning {#sec-ml-systems-tiny-machine-learning-ccce}
 
 Tiny Machine Learning (Tiny ML) brings intelligence to the smallest devices, from microcontrollers[^fn-microcontrollers] to embedded sensors, enabling real-time computation in resource-constrained environments. These systems power applications such as predictive maintenance, environmental monitoring, and simple gesture recognition. Tiny ML devices are optimized for energy efficiency, often running for months or years on limited power sources, such as coin-cell batteries, while delivering actionable insights in remote or disconnected environments.
@@ -707,12 +773,19 @@ Box4/.style={Box,draw=VioletLine,fill=VioletL2!40, text width=39mm, minimum widt
   },
  Line/.style={line width=1.0pt,black!50,text=black,-{Triangle[width=0.8*6pt,length=0.98*6pt]}},
 }
-\node[Box, fill=GreenL,](B1){Challenges};
-\node[Box2,right=2 of B1,fill=BlueL](B2){Examples};
-\node[Box3,right=2 of B2,fill=OrangeL](B3){Benefits};
-\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){Characteristics};
+\node[Box, fill=GreenL,](B1){Characteristics};
+\node[Box2,right=2 of B1,fill=BlueL](B2){Benefits};
+\node[Box3,right=2 of B2,fill=OrangeL](B3){Challenges};
+\node[Box4,right=2 of B3,fill=VioletL2!90!violet!50](B4){Examples};
 \node[Box,draw=OliveLine,fill=OliveL!30, minimum height=11.5mm,
 above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Tiny ML};
+%
+\node[Box4,below=0.7 of B4](B41){Low Power and Resource Constrained Environments};
+\node[Box4,below=of B41](B42){On-Device Machine Learning};
+%
+\node[Box3,below=0.7 of B3](B31){Extremely Low Latency};
+\node[Box3,below=of B31](B32){High Data Security};
+\node[Box3,below=of B32](B33){Energy Efficiency};
 %
 \node[Box,below=0.7 of B1](B11){Complex Development Cycle};
 \node[Box,below=of B11](B12){Model Optimization and Compression};
@@ -722,13 +795,6 @@ above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Tiny ML};
 \node[Box2,below=of B21](B22){Environmental Monitoring};
 \node[Box2,below=of B22](B23){Lower Bandwidth Usage};
 \node[Box2,below=of B23](B24){Predictive Maintenance};
-%
-\node[Box3,below=0.7 of B3](B31){Extremely Low Latency};
-\node[Box3,below=of B31](B32){High Data Security};
-\node[Box3,below=of B32](B33){Energy Efficiency};
-%
-\node[Box4,below=0.7 of B4](B41){Low Power and Resource Constrained Environments};
-\node[Box4,below=of B41](B42){On-Device Machine Learning};
 %
 \foreach \i in{1,2,3}{
   \foreach \x in{1,3}{
