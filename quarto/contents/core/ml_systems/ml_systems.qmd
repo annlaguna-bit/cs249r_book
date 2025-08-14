@@ -429,7 +429,7 @@ above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Cloud ML};
 \end{tikzpicture}
 
 ```
-**Cloud ML Capabilities**: Cloud machine learning systems address challenges related to scale, complexity, and resource management by leveraging centralized computing infrastructure and specialized hardware. This figure outlines key considerations for deploying models in the cloud, including the need for robust infrastructure and efficient resource allocation to handle large datasets and complex computations.
+**Cloud ML Characteristics**: Cloud machine learning systems address challenges related to scale, complexity, and resource management by leveraging centralized computing infrastructure and specialized hardware. This figure outlines key considerations for deploying models in the cloud, including the need for robust infrastructure and efficient resource allocation to handle large datasets and complex computations.
 :::
 
 ### Characteristics {#sec-ml-systems-characteristics-1648}
@@ -586,7 +586,7 @@ above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Cloud ML};
 }
 \end{tikzpicture}
 ```
-**Edge ML Dimensions**: This figure outlines key considerations for edge machine learning, contrasting challenges with benefits and providing representative examples and characteristics. Understanding these dimensions is crucial for designing and deploying effective AI solutions on resource-constrained devices.
+**Edge ML Characteristics**: This figure outlines key considerations for edge machine learning, contrasting challenges with benefits and providing representative examples and characteristics. Understanding these dimensions is crucial for designing and deploying effective AI solutions on resource-constrained devices.
 :::
 
 ### Characteristics {#sec-ml-systems-characteristics-40ab}
@@ -738,6 +738,11 @@ above=1of $(B2.north east)!0.5!(B3.north west)$](B0){Tiny ML};
 }
 \end{tikzpicture}
 ```
+<<<<<<< HEAD
+=======
+**Mobile ML Characteristics**: Mobile ML runs AI models directly on smartphones or tablets, enabling personalized, offline, and privacy-preserving intelligence within the constraints of battery, heat, and limited compute.
+:::
+>>>>>>> 24563645588c1333835ac66a4cb75185b67d759e
 
 ## Tiny Machine Learning {#sec-ml-systems-tiny-machine-learning-ccce}
 
